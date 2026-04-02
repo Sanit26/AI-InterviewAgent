@@ -19,7 +19,7 @@ export const askAi = async (messages) => {
         headers: {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`, // ✅ FIX
           "Content-Type": "application/json",
-          "HTTP-Referer": "http://localhost:5173", // ✅ REQUIRED (OpenRouter)
+          "HTTP-Referer": "https://ai-interview-agent-client-idl7.onrender.com", // ✅ REQUIRED (OpenRouter)
           "X-Title": "InterviewIQ",               // ✅ REQUIRED
         },
       }
